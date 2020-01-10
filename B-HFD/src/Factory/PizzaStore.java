@@ -1,0 +1,14 @@
+package Factory;
+/* 抽象的PizzaStore 超类 */
+public abstract class PizzaStore {
+    public final Pizza orderPizza(String type) {
+        Pizza pizza;
+        pizza = createPizza(type);
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+        return pizza;
+    }
+    protected abstract Pizza createPizza(String type);
+}

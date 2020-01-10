@@ -1,0 +1,5 @@
+package Proxy;
+//抽象主题
+public interface Subject {
+    public void movie();
+}
