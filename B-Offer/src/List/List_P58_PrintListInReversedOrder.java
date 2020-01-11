@@ -1,8 +1,8 @@
-package P58_PrintListInReversedOrder;
+package List;
 
 import java.util.Stack;
 
-public class P58_PrintListInReversedOrder {
+public class List_P58_PrintListInReversedOrder {
     //递归
     public static void printReversingRecursive(ListNode<Integer> node){
         if(node == null)

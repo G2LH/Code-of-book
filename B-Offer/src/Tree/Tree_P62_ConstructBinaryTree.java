@@ -1,9 +1,9 @@
-package P60_BinaryTree;
+package Tree;
 /**
  * 重建二叉树:
  * 前序+中序，后续+中序可以完成重建，而前序+后序无法完成
  */
-public class P62_ConstructBinaryTree {
+public class Tree_P62_ConstructBinaryTree {
     public static TreeNode construct(int[] preOrder, int[] inOrder){
         if(preOrder == null || inOrder == null || preOrder.length!=inOrder.length || preOrder.length == 0)
             return null;
@@ -35,11 +35,11 @@ public class P62_ConstructBinaryTree {
         TreeNode root = construct(pre,in);
         //对重建后的树,进行前中后序遍历，验证是否重建正确
 
-        P60_TraversalOfBinaryTree.preOrderIterative(root);
+        Tree_P60_TraversalOfBinaryTree.preOrderIterative(root);
         System.out.println();
-        P60_TraversalOfBinaryTree.inOrderIterative(root);
+        Tree_P60_TraversalOfBinaryTree.inOrderIterative(root);
         System.out.println();
-        P60_TraversalOfBinaryTree.postOrderIterative(root);
+        Tree_P60_TraversalOfBinaryTree.postOrderIterative(root);
 
     }
 }

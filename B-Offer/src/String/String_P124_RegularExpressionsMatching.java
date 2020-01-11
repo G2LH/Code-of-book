@@ -1,6 +1,8 @@
+package String;
+
 //实现正则表达式中.和*的功能。.表示任意一个字符，*表示他前面的字符的任意次（含0次）。(字符串与模式长度相等)
 // 比如aaa与a.a和ab*ac*a匹配，但与aa.a和ab*a不匹配。
-public class P124_RegularExpressionsMatching {
+public class String_P124_RegularExpressionsMatching {
     public static boolean match(String str, String pattern){
         if(str == null || pattern ==null)
             return false;

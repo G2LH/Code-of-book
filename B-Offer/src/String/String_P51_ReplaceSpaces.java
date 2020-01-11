@@ -1,8 +1,10 @@
+package String;
+
 /**
  * 替换空格
  * 把传入字符数组中的' '换成'&20',且传入数组保证有足够空间容纳修改后的字符
  */
-public class P51_ReplaceSpaces {
+public class String_P51_ReplaceSpaces {
     //由于java的字符数组没有结束符，所以需要多传入个原始长度
     //双指针：先计算好替换后的位置，从后向前替换，时间复杂度o(n)
     public static void replaceBlank(char[] data, int length){

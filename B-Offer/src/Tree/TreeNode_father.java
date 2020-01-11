@@ -1,4 +1,4 @@
-package P60_BinaryTree;
+package Tree;
 
 public class TreeNode_father {
     public int val;

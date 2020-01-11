@@ -1,3 +1,5 @@
+package List;
+
 public class ListNode<T> {
     public T val;
     public ListNode<T> next;
@@ -9,7 +11,7 @@ public class ListNode<T> {
     public String toString() {
         StringBuilder ret = new StringBuilder();
         ret.append("[");
-        for(ListNode cur = this;;cur=cur.next){
+        for(ListNode cur = this;; cur=cur.next){
             if(cur==null){
                 ret.deleteCharAt(ret.lastIndexOf(" "));
                 ret.deleteCharAt(ret.lastIndexOf(","));
@@ -22,3 +24,4 @@ public class ListNode<T> {
         return ret.toString();
     }
 }
+

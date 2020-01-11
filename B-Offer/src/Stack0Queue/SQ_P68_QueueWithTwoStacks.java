@@ -1,6 +1,6 @@
 package Stack0Queue;
 
-public class P68_QueueWithTwoStacks {
+public class SQ_P68_QueueWithTwoStacks {
     public static  void main(String[] args){
         SQueue<Integer> sQueue = new SQueue<>();
         System.out.println(sQueue.poll());

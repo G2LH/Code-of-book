@@ -1,4 +1,4 @@
-package P60_BinaryTree;
+package Tree;
 
 public class TreeNode<T> {
     public T val;
@@ -6,5 +6,7 @@ public class TreeNode<T> {
     public TreeNode<T> right;
     public TreeNode(T val){
         this.val = val;
+        this.left = null;
+        this.right = null;
     }
 }

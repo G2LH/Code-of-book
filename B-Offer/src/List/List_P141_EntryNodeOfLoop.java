@@ -1,5 +1,7 @@
+package List;
+
 //假设一个链表中包含环，请找出入口节点。若没有环则返回null。
-public class P141_EntryNodeOfLoop {
+public class List_P141_EntryNodeOfLoop {
     public static ListNode<Integer> findNode(ListNode<Integer> pHead){
 
         if(pHead == null || pHead.next == null)

@@ -1,7 +1,9 @@
+package Hash;
+
 /**
  * 一个长度为n的数组，值的范围在0~n-1内，有一个或多个数字重复，求其中任意一个
  */
-public class P39_DuplicationInArray {
+public class Hash_P39_DuplicationInArray {
     //方法一：暴力求解，不会修改原始数据，时间复杂度o(n^2)，空间复杂度o(1)
     public static int getDuplication(int[] data){
         if(data == null || data.length < 2)

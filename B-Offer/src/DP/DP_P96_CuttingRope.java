@@ -1,6 +1,8 @@
+package DP;
+
 //动态规划：给你一根长度为n的绳子，请把绳子剪成m段，求每段绳子的乘积最大
 //剪了一刀后,f(n)=max(f(i)*f(n-i))
-public class P96_CuttingRope {
+public class DP_P96_CuttingRope {
     public static int maxCutting(int length){
         if(length < 2)
             return 0;

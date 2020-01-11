@@ -1,4 +1,6 @@
-public class P100_NumberOf1InBinary {
+package Bit;
+
+public class Bit_P100_NumberOf1InBinary {
     //将数字无符号右移。循环32次
     public static int NumberOf1(int n){
         int count = 0;

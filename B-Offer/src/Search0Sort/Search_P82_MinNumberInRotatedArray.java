@@ -1,6 +1,8 @@
+package Search0Sort;
+
 // 旋转数组的最小数字
 //原本有序，进行了旋转，但在一定程度上还是有序的,二分查找
-public class P82_MinNumberInRotatedArray {
+public class Search_P82_MinNumberInRotatedArray {
     public static int min(int[] data){
         if(data==null || data.length==0)
             return -1;

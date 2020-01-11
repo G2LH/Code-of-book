@@ -1,5 +1,7 @@
+package List;
+
 //反转链表
-public class P124_ReverseList {
+public class List_P142_ReverseList {
     public static ListNode<Integer> reverseList(ListNode<Integer> head){
         if(head == null || head.next == null)
             return null;

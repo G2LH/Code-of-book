@@ -1,3 +1,5 @@
+//数值的整数次方
+//细节
 public class P110_Power {
     static boolean invalidInput = false;
     public static double power(double base, int exponent){

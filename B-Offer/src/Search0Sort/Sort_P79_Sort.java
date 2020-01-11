@@ -1,12 +1,9 @@
 package Search0Sort;
 
-import P58_PrintListInReversedOrder.ListNode;
-
 import java.util.ArrayList;
-import java.util.LinkedList;
 import java.util.List;
 
-public class P79_Sort {
+public class Sort_P79_Sort {
     //数组快排，时间o(nlogn)(最差n^2)，空间o(logn)(最差n)，递归造成的栈空间的使用，不稳定
     public static void quickSort(int[] data){
         if(data == null || data.length <= 1) return;

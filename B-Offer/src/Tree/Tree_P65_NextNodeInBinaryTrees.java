@@ -1,6 +1,6 @@
-package P60_BinaryTree;
+package Tree;
 
-public class P65_NextNodeInBinaryTrees {
+public class Tree_P65_NextNodeInBinaryTrees {
     public static TreeNode_father getNext(TreeNode_father pNode){
         if(pNode == null)
             return null;

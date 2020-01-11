@@ -1,5 +1,7 @@
+package String;
+
 //表示数值的字符串,按照A[.[B]][e|EC] 或者 .B[e|EC];A,B,C这两种模式匹配
-public class P127_NumberStrings {
+public class String_P127_NumberStrings {
     public static  boolean isNumeric(String str) {
         if (str == null || str.length() == 0)
             return false;

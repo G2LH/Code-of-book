@@ -1,5 +1,7 @@
+package List;
+
 //在o(1)时间内删除单链表的节点。
-public class P119_DeleteNodeInList {
+public class List_P119_DeleteNodeInList {
     public static ListNode<Integer> deleteNode(ListNode<Integer> head, ListNode<Integer> node){
         //删除头结点
         if(node == head){

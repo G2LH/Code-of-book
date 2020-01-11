@@ -1,5 +1,7 @@
+package List;
+
 //链表中倒数第k个节点:使用两个距离为k的指针向右移动，只需扫描一遍。
-public class P134_KthNodeFromEnd {
+public class List_P134_KthNodeFromEnd {
     public static ListNode<Integer> findKthToTail(ListNode<Integer> head, int k){
         if(head == null || k <= 0)
             return null;

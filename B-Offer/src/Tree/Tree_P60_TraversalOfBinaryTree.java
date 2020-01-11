@@ -1,8 +1,8 @@
-package P60_BinaryTree;
+package Tree;
 
 import java.util.*;
 
-public class P60_TraversalOfBinaryTree {
+public class Tree_P60_TraversalOfBinaryTree {
 
     public static void visit(TreeNode node){
         System.out.print(node.val+" ");

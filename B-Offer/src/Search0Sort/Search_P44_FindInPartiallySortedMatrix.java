@@ -1,5 +1,7 @@
+package Search0Sort;
+
 //一个二维数组中，每一行从左到右递增，每一列从上到下递增。输入一个整数，判断数组中是否含有该整数
-public class P44_FindInPartiallySortedMatrix {
+public class Search_P44_FindInPartiallySortedMatrix {
     public static boolean findInPartiallySortedMatrix(int[][] data, int target){
         if(data == null || data.length == 0 || data[0].length == 0)
             return false;
