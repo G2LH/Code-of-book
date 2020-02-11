@@ -14,8 +14,8 @@ public class Tree_P62_ConstructBinaryTree {
         if(pre_start>pre_end||in_start>in_end){//判定是否序列是否便利完。
             return null;
         }
-        TreeNode node =new TreeNode(preOrder[pre_start]);//存入节点
-        for(int i=pre_start;i<=in_end;i++){//从中序遍历开始，寻找和根节点相同的元素。
+        TreeNode node = new TreeNode(preOrder[pre_start]);//存入节点
+        for(int i=in_start;i<=in_end;i++){//从中序遍历开始，寻找和根节点相同的元素。
             if(inOrder[i]==preOrder[pre_start]){//找到了之后分为左右子树，递归进行查找。
                 node.left=constructCore(preOrder,pre_start+1, pre_start + i, inOrder, in_start,i-1);
                 node.right=constructCore(preOrder,pre_start + i + 1,pre_end,inOrder,i+1,in_end);
@@ -30,8 +30,8 @@ public class Tree_P62_ConstructBinaryTree {
         //        / \
         //       4   5
         //pre->12453  in->42513   post->45231
-        int[] pre={1,2,4,5,3};
-        int[] in={4,2,5,1,3};
+        int[] pre={1,2,3,4,5,6,7};
+        int[] in={3,2,4,1,6,5,7};
         TreeNode root = construct(pre,in);
         //对重建后的树,进行前中后序遍历，验证是否重建正确
 
