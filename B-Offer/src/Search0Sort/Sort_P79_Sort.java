@@ -105,8 +105,8 @@ public class Sort_P79_Sort {
         if(end == start)
             return;
         int[] temp = new int[end - start + 1];//temp数组用于暂存合并的结果
-        int left = start, right = mid + 1, tempIndex = 0;//左右半边的指针，合并后数组的指针
-        while(left <= mid && right <= end){ // 把较小的数先移到新数组中
+        int left = start, right = mid + 1, tempIndex = start;//左右半边的指针，合并后数组的指针
+        while(left <= mid && right <= end){ // 合并两个有序数组：把较小的数先移到新数组中
             if(data[left] <= data[right])
                 temp[tempIndex++] = data[left++];
             else
@@ -117,7 +117,8 @@ public class Sort_P79_Sort {
             temp[tempIndex++] = data[left++];
         while (right <= end)// 把右边边剩余的数移入数组
             temp[tempIndex++] = data[right++];
-        for(int i = 0; i < temp.length; i++)  // 把新数组中的数覆盖nums数组
+
+        for(int i = 0; i < temp.length; i++)  // **把新数组中的数覆盖nums数组
             data[start+i] = temp[i];
     }
     public static void testMergeSort(){
@@ -226,7 +227,7 @@ public class Sort_P79_Sort {
             int minIndex = i;//未排序序列中最小数据数组下标
             for(int j=i+1;j<data.length;j++){//在未排序元素中继续寻找最小元素，并保存其下标
                 if(data[j]<data[minIndex])
-                    minIndex = j;
+                    minIndex = j;//减少交换操作
             }
             if(i!=minIndex) {//将最小元素放到已排序序列的末尾
                 int temp = data[i];

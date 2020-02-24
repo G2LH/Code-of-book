@@ -15,8 +15,7 @@ public class Stack_P168_StackPushPopOrder {
         while(j < out.length){
             if(temp.isEmpty() || temp.peek() != out[j]){
                 if(i < in.length){
-                    temp.push(in[i]);
-                    i++;
+                    temp.push(in[i++]);
                 }
                 else{
                     return false;

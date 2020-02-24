@@ -7,7 +7,8 @@ import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Stack;
 
-public class P176_printTreeInSpecial {
+public class Tree_P176_PrintTreeInSpecial {
+    //从上到下不分行打印
     public static void printTree1(TreeNode<Integer> root){
         if(root == null){
             return;
@@ -25,10 +26,33 @@ public class P176_printTreeInSpecial {
             }
         }
     }
+    //从上到下分行打印,提前确定队列容量
+    public static void printTree2(TreeNode<Integer> root){
+        if(root == null){
+            return;
+        }
+        TreeNode<Integer> temp;
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(root);
+        while(!q.isEmpty()) {
+            for (int s = q.size(); s > 0; s--){
+                temp = q.poll();
+                System.out.print(temp.val);
+                if (temp.left != null) {
+                    q.offer(temp.left);
+                }
+                if (temp.right != null) {
+                    q.offer(temp.right);
+                }
+            }
+            System.out.println();
+        }
+    }
 
+    //之字形打印
     //第k行从左到右打印，第k+1行从右到左打印，可以比较容易想到用两个栈来实现。
     //另外要注意，根据是从左到右还是从右到左访问的不同，压入左右子节点的顺序也有所不同。
-    public static void printTree2(TreeNode<Integer> root){
+    public static void printTree3(TreeNode<Integer> root){
         if(root == null){
             return;
         }

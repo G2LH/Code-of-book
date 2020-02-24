@@ -2,6 +2,22 @@ package List;
 
 //输入两个递增排序的链表，要求合并后保持递增。
 public class List_P145_MergeSortedLists {
+    //递归
+    public static ListNode<Integer> merge1(ListNode<Integer> head1, ListNode<Integer> head2){
+        if(head1 == null){
+            return head2;
+        }
+        if(head2 == null){
+            return head1;
+        }
+        if(head1.val < head2.val){
+            head1.next = merge1(head1.next,head2);
+            return head1;
+        }else{
+            head2.next = merge1(head1,head2.next);
+            return head2;
+        }
+    }
     public static ListNode<Integer> merge(ListNode<Integer> head1, ListNode<Integer> head2){
         if(head1 == null) {
             return head2;
@@ -55,6 +71,6 @@ public class List_P145_MergeSortedLists {
         head2.next.next.next = new ListNode<>(8);
         System.out.println(head1);
         System.out.println(head2);
-        System.out.println(merge(head1,head2));
+        System.out.println(merge1(head1,head2));
     }
 }
