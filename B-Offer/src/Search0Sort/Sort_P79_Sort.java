@@ -24,7 +24,7 @@ public class Sort_P79_Sort {
                 right--;
             if(left < right)
                 data[left] = data[right];    //交换比枢轴小的记录到左端
-            while (left < right && data[right] < pivot)
+            while (left < right && data[left] < pivot)
                 left++;
             if(left < right)
                 data[right] = data[left];   //交换比枢轴小的记录到右端

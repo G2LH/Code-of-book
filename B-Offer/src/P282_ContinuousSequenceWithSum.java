@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class P282_ContinuousSequenceWithSum {
-    public ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
+    public static ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
         if(sum <= 1){
             return new ArrayList<>();
         }
@@ -26,5 +26,9 @@ public class P282_ContinuousSequenceWithSum {
             }
         }
         return array;
+    }
+    public static void main(String[] args){
+        ArrayList<ArrayList<Integer>> res = new ArrayList<ArrayList<Integer>>();
+        res = FindContinuousSequence(15);
     }
 }

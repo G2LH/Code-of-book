@@ -32,18 +32,11 @@ public class Tree_P273_isBalanced {
             return 0;
         }
         int left = Depth(node.left);
-        if(left == -1){
-            return -1;
-        }
         int right = Depth(node.right);
-        if(right == -1){
-            return -1;
-        }
         if((left-right) > 1 || (right-left) >1){
             return -1;
-        }else{
-            return left>right?left+1:right+1;
         }
+        return left>right?left+1:right+1;
     }
     public static void main(String[] args){
         TreeNode<Integer> root = new TreeNode<>(1);
