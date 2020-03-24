@@ -1,5 +1,7 @@
 package Tree;
-
+//二叉树的深度
+//题目要求：
+//求二叉树的深度。仅仅包含一个根节点的二叉树深度为1
 public class Tree_P271_TreeDepth {
     //1.
     private static int max = 0;

@@ -1,3 +1,6 @@
+//数组中的逆序对
+//题目要求：
+//如果前面一个数字大于后面的数字，则这两个数字组成一个逆序对。输入一个数组，求出这个数组中的逆序对总数。
 public class P249_InversePairs {
     private static int count=0 ;
     public static int inversePairs(int[] data){

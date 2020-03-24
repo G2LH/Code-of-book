@@ -1,5 +1,5 @@
 //打印从1到最大的n位数
-//大数问题
+//大数问题.
 public class P114_PrintToMaxOfNDigits {
     public static void printToMaxOfNDigits(int num){
         if(num < 0)
@@ -15,7 +15,7 @@ public class P114_PrintToMaxOfNDigits {
     //加1
     public static  boolean increment(StringBuilder str){
         for(int i = str.length() - 1; i >= 0; i--){
-            if(str.charAt(i) < '9' && str.charAt(i) >= '0'){
+            if(str.charAt(i) < '9' && str.charAt(i) >= '0'){//=0的操作在这处理,解决进1操作
                 str.setCharAt(i, (char)(str.charAt(i) + 1));
                 return true;
             }

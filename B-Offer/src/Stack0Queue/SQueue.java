@@ -1,7 +1,7 @@
 package Stack0Queue;
 
 import java.util.Stack;
-
+//双栈实现队列
 public class SQueue<T> {
     private Stack<T> stack1 = new Stack<>();
     private Stack<T> stack2 = new Stack<>();

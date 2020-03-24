@@ -1,6 +1,8 @@
 package List;
 
 //假设一个链表中包含环，请找出入口节点。若没有环则返回null。
+//两个指针，快指针一次前进两步，慢指针一次前进一步，初始化都再链表头部。然后开始移动，如果他们指向了同一个节点，则证明有环，否则没环。
+//当指向了同一个节点时，慢指针再次初始化，指向头结点。快慢指针前进步数都改为1，当他们再次指向同一个节点，这个节点就是环的入口节点。
 public class List_P141_EntryNodeOfLoop {
     public static ListNode<Integer> findNode(ListNode<Integer> pHead){
 

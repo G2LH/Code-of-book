@@ -40,5 +40,6 @@ public class Bit_P100_NumberOf1InBinary {
         System.out.println(NumberOf2(-3));
         System.out.println(NumberOf3(3));
         System.out.println(NumberOf3(-3));
+
     }
 }

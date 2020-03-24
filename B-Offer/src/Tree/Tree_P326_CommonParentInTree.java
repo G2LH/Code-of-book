@@ -3,8 +3,27 @@ package Tree;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
 public class Tree_P326_CommonParentInTree {
+    ////输入一棵二叉树的根节点，输入两个被观察节点，求这两个节点的最低(最近)公共祖先
+    //如果p和q分别是root的左右节点，那么root就是我们要找的最近公共祖先
+    //如果p和q都是root的左节点，那么返回lowestCommonAncestor(root.left,p,q)
+    //如果p和q都是root的右节点，那么返回lowestCommonAncestor(root.right,p,q)
+    //
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if(root==null || root==p || root==q)
+            return root;
+
+        TreeNode leftNode=lowestCommonAncestor(root.left,p,q);
+        TreeNode rightNode=lowestCommonAncestor(root.right,p,q);
+
+        if(leftNode==null)
+            return rightNode;
+        if(rightNode==null)
+            return leftNode;
+
+        return root;
+    }
+    //输入一棵树的根节点，输入两个被观察节点，求这两个节点的最低(最近)公共祖先
     public static class CommonTreeNode{
         public char val;
         public List<CommonTreeNode> children;

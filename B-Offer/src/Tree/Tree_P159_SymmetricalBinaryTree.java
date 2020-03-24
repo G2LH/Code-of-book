@@ -1,5 +1,6 @@
 package Tree;
-
+//对称的二叉树
+//题目要求：判断一棵二叉树是不是对称的。如果某二叉树与它的镜像一样，称它是对称的。
 import java.util.LinkedList;
 import java.util.Queue;
 

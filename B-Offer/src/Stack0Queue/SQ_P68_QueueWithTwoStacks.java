@@ -1,5 +1,5 @@
 package Stack0Queue;
-
+////双栈实现队列
 public class SQ_P68_QueueWithTwoStacks {
     public static  void main(String[] args){
         SQueue<Integer> sQueue = new SQueue<>();

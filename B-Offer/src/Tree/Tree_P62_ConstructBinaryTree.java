@@ -3,6 +3,7 @@ package Tree;
  * 重建二叉树:
  * 前序+中序，后续+中序可以完成重建，而前序+后序无法完成
  */
+//ok
 public class Tree_P62_ConstructBinaryTree {
     public static TreeNode construct(int[] inOrder, int[] postOrder){
         /*if(preOrder == null || inOrder == null || preOrder.length!=inOrder.length || preOrder.length == 0)

@@ -1,7 +1,27 @@
 package List;
 
-//链表中倒数第k个节点:使用两个距离为k的指针向右移动，只需扫描一遍。
+//链表中倒数第k个节点:使用两个距离为k的指针向右移动，只需扫描一遍
 public class List_P134_KthNodeFromEnd {
+    //删除链表中倒数第k个节点:使用两个距离为k的指针向右移动，只需扫描一遍
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        if(head == null || n == 0){
+            return head;
+        }
+        ListNode pre = new ListNode(0);//为了删除头节点
+        pre.next = head;
+        ListNode l = pre;
+        ListNode r = pre;
+        for(int i = 0; i < n; i++){
+            r = r.next;
+        }
+        while(r.next!=null){
+            l = l.next;
+            r = r.next;
+        }
+        l.next = l.next.next;
+        return pre.next;
+    }
+    ////链表中倒数第k个节点:使用两个距离为k的指针向右移动，只需扫描一遍
     public static ListNode<Integer> findKthToTail(ListNode<Integer> head, int k){
         if(head == null || k <= 0)
             return null;
@@ -21,6 +41,7 @@ public class List_P134_KthNodeFromEnd {
         }
         return ptr2;
     }
+
     public static void main(String[] args){
         ListNode<Integer> head = new ListNode<>(1);
         head.next = new ListNode<>(2);

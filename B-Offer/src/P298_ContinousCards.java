@@ -1,5 +1,7 @@
 import java.util.Arrays;
-
+//扑克牌中的顺子
+//题目要求：
+//抽取5张牌，判断是不是一个顺子。2-10为数字本身，A为1，J为11，Q为12，K为13，大小王可堪称任意数字。
 public class P298_ContinousCards {
     public static boolean isContinuous(int[] numbers) {
         if(numbers == null || numbers.length <= 0){

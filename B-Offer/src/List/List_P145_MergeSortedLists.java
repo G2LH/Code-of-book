@@ -1,6 +1,6 @@
 package List;
 
-//输入两个递增排序的链表，要求合并后保持递增。
+//输入两个递增排序的链表，要求合并后保持递增。看递归
 public class List_P145_MergeSortedLists {
     //递归
     public static ListNode<Integer> merge1(ListNode<Integer> head1, ListNode<Integer> head2){

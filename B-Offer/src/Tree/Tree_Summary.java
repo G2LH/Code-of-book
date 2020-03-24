@@ -21,15 +21,15 @@ public class Tree_Summary {
         }
         //没有左右子树得时候
         if(root.left == null){
-            return MinDepth(root.right);
+            return MinDepth(root.right)+1;
         }
         if(root.right == null){
-            return MinDepth(root.left);
+            return MinDepth(root.left)+1;
         }
         //左右子树都存在得时候
         return Math.min(MinDepth(root.left),MinDepth(root.right)) + 1;
     }
-    //NUmber of Node
+    //Number of Node
     public static int NumberOfNode(TreeNode<Integer> root){
         if(root == null){
             return 0;
@@ -336,20 +336,40 @@ public class Tree_Summary {
         return counts[n];
     }
 
-    //IsBST
+    //IsBST 给定一个二叉树，判断其是否是一个有效的二叉搜索树。
     private static int last = Integer.MIN_VALUE;
     public boolean isTree(TreeNode<Integer> root){
         if(root == null)
             return true;
-        if(!isTree(root.left))
+        if(!isTree(root.left))//不满足直接返回
             return false;
         if(root.val <= last)
             return false;
-        last=root.val;
-        if(!isTree(root.right))
+        last=root.val;//保存上一个节点
+        if(!isTree(root.right))//不满足直接返回
             return false;
         return true;
     }
+
+
+    //将一个按照升序排列的有序数组，转换为一棵高度平衡二叉搜索树。
+    public TreeNode sortedArrayToBST(int[] nums) {
+        if(nums == null){
+            return null;
+        }
+        return construct(nums,0,nums.length-1);
+    }
+    public TreeNode construct(int[] nums,int l, int r){
+        if(l>r){
+            return null;
+        }
+        int mid = (l + r)/2;
+        TreeNode node = new TreeNode(nums[mid]);
+        node.left = construct(nums, l, mid-1);
+        node.right = construct(nums,mid+1,r);
+        return node;
+    }
+
     public static void main(String[] args){
         TreeNode<Integer> root = new TreeNode<>(1);
         root.left = new TreeNode<>(2);

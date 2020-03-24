@@ -1,3 +1,7 @@
+//把数组排列成最小的数
+//题目要求：
+//输入一个正整数数组，把数组里所有数字拼接起来排成一个数，使其为所有可能的拼接结果中最小的一个
+//对数组进行排序，组合后判断大小，排序(数字组合涉及到大数问题)
 public class P227_SortArrayForMinNumber {
     public static String PrintMinNumber(int [] numbers) {
         if(numbers.length == 0 || numbers == null){

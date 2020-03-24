@@ -1,4 +1,11 @@
-public class P304_MaximalProfit {
+package DP;
+//状态定义：
+//转移方程：
+//初始状态：
+//返回值：
+public class DP_P304_MaximalProfit {
+    //股票利润最大
+    //题解：遍历时 记录min，profit，更新min，profit
     public static int maxDiff(int[] data){
         if(data == null || data.length < 2){
             return -1;

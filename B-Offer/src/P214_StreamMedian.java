@@ -1,7 +1,9 @@
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.PriorityQueue;
-
+//数据流中的中位数
+//题目要求：
+//得到一个数据流中的中位数。
 public class P214_StreamMedian {
     //链表排序
     private static ArrayList<Integer> list = new ArrayList<Integer>();

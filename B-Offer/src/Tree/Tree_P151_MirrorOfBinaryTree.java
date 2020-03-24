@@ -1,5 +1,6 @@
 package Tree;
-
+//二叉树的镜像
+//题目要求：求一棵二叉树的镜像。
 public class Tree_P151_MirrorOfBinaryTree {
     public static void mirrorRecursively(TreeNode<Integer> head){
         if(head == null)

@@ -1,7 +1,9 @@
 package List;
 
 import java.util.Stack;
-
+//两个链表的第一个公共节点
+//题目要求：
+//输入两个单链表，找出它们的第一个公共节点。以下图为例，对一个公共节点为6所在的节点
 public class List_P253_CommonNodesInLists {
     //从链表的尾部向前看，发现尾部是相同的，向前走会分叉，找到分叉点即可
     public static ListNode FindFirstCommonNode(ListNode pHead1, ListNode pHead2) {

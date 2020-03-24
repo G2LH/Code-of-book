@@ -1,6 +1,6 @@
 package Search0Sort;
 
-//调整数组顺序使奇数位于偶数前面
+//调整数组顺序使奇数位于偶数前面。
 public class Sort_P129_ReorderArray {
     public static void reorder(int[] array){
 //        if(data == null || data.length < 2)

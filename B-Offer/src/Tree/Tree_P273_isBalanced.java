@@ -1,5 +1,7 @@
 package Tree;
-
+//平衡二叉树
+//题目要求：
+//输入二叉树的根节点，判断该树是否是平衡二叉树
 public class Tree_P273_isBalanced {
     //1.从根节点开始判断
     public static boolean isBalanced(TreeNode root){
@@ -8,7 +10,7 @@ public class Tree_P273_isBalanced {
         }
         int left = TreeDepth(root.left);
         int right = TreeDepth(root.right);
-        if((left-right) > 1 || (right - left) < 1){
+        if((left-right) > 1 || (right - left) > 1){
             return false;
         }
         return isBalanced(root.left)&&isBalanced(root.right);

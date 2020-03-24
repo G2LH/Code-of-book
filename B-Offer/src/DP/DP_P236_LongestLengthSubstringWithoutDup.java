@@ -1,6 +1,37 @@
 package DP;
+//状态定义：
+//转移方程：
+//初始状态：
+//返回值：
+import java.util.HashSet;
 
-public class DP_P236_LongestSubstringWithoutDup {
+//最长不含重复字符的子字符串的长度
+//题目要求：
+//输入一个字符串（只包含a~z的字符），求其最长不含重复字符的子字符串的长度。例如对于arabcacfr，最长不含重复字符的子字符串为acfr，长度为4。
+public class DP_P236_LongestLengthSubstringWithoutDup {
+    //HashSet
+    public static int LongestSubString(String str){
+        int l=0,r=0;
+        int max=0,length=0;
+        HashSet<Character> set = new HashSet<>();
+        while(l<str.length()&&r<str.length()){
+            if(!set.contains(str.charAt(r))){
+                set.add(str.charAt(r));
+                length=r-l+1;
+                r++;
+            }
+            else{
+                set.remove(str.charAt(l));//一直删到不重复为止
+                l++;
+            }
+            if(max < length){
+                max = length;
+            }
+        }
+        return max;
+    }
+
+    //动态
     public static int longestSubstringWithoutDuplication(String str) {
         if (str == null || str.equals("")) {
             return 0;
@@ -31,7 +62,6 @@ public class DP_P236_LongestSubstringWithoutDup {
         }
         return maxLength;
     }
-
     public static void main(String[] args){
         System.out.println(longestSubstringWithoutDuplication("arabcacfr"));
         System.out.println(longestSubstringWithoutDuplication("abcdefaaa"));

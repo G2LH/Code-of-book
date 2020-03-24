@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Sort_P79_Sort {
-    //数组快排，时间o(nlogn)(最差n^2)，空间o(logn)(最差n)，递归造成的栈空间的使用，不稳定
+    //数组快排，时间o(nlogn)(最差n^2)，递归造成的栈空间的使用，不稳定
     public static void quickSort(int[] data){
         if(data == null || data.length <= 1) return;
         QuickSort(data, 0, data.length - 1);
@@ -84,8 +84,6 @@ public class Sort_P79_Sort {
     }
 
 
-
-
     //数组二路归并，时间o(nlogn)，空间o(n)，稳定
     public static int[] mergeSort(int[] data){
         if(data == null || data.length <= 1)
@@ -105,7 +103,7 @@ public class Sort_P79_Sort {
         if(end == start)
             return;
         int[] temp = new int[end - start + 1];//temp数组用于暂存合并的结果
-        int left = start, right = mid + 1, tempIndex = start;//左右半边的指针，合并后数组的指针
+        int left = start, right = mid + 1, tempIndex = 0;//左右半边的指针，合并后数组的指针
         while(left <= mid && right <= end){ // 合并两个有序数组：把较小的数先移到新数组中
             if(data[left] <= data[right])
                 temp[tempIndex++] = data[left++];
@@ -311,13 +309,13 @@ public class Sort_P79_Sort {
 
 
     public static void main(String[] args){
-        testQuickSort();
-        testQuickSortList();
-        testMergeSort();
+        //testQuickSort();
+        //testQuickSortList();
+        //testMergeSort();
         testHeapSort();
-        testBubbleSort();
-        testSelectionSort();
-        testInsertionSort();
-        testShellSort();
+        //testBubbleSort();
+        //testSelectionSort();
+        //testInsertionSort();
+        //testShellSort();
     }
 }

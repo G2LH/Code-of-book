@@ -2,7 +2,7 @@ import java.util.HashMap;
 import java.util.Map;
 //数组中出现次数超过一半的数字
 //题目要求：
-//找出数组中出现次数超过数组长度一半的数字
+//找出数组中出现次数超过数组长度一半的数字.
 public class P205_MoreThanHalfNumber {
     //1.HashMap
     public static int moreThanHalfNum(int[] array){

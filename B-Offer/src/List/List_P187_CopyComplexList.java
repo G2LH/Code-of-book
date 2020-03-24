@@ -1,7 +1,8 @@
 package List;
 
 import java.util.HashMap;
-
+//复杂链表的复制
+//题目要求：在复杂链表中，每个节点除了有一个next指针指向下一个节点，还有一个random指针指向链表中的任意节点或null，请完成一个能够复制复杂链表的函数。
 public class List_P187_CopyComplexList {
     //1
     public RandomListNode Clone(RandomListNode pHead) {

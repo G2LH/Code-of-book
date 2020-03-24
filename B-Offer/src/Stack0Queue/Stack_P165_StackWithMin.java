@@ -2,7 +2,7 @@ package Stack0Queue;
 //包含min函数的栈
 //
 //题目要求：
-//定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的min函数。要求在该栈中，调用min，push及pop的时间复杂度都是o(1)。
+//定义栈的数据结构，请在该类型中实现一个能够得到栈的最小元素的min函数。要求在该栈中，调用min，push及pop的时间复杂度都是o(1)
 import java.util.Stack;
 
 public class Stack_P165_StackWithMin {

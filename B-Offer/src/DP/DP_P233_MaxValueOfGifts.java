@@ -1,10 +1,14 @@
 package DP;
+//状态定义：
+//转移方程：
+//初始状态：
+//返回值：
 
 //礼物的最大值
 //
 //题目要求：
 //在一个m*n的棋盘的每一个格都放有一个礼物，每个礼物都有一定价值（大于0）。
-// 从左上角开始拿礼物，每次向右或向下移动一格，直到右下角结束。给定一个棋盘，求拿到礼物的最大价值。
+// 从左上角开始拿礼物，每次向右或向下移动一格，直到右下角结束。给定一个棋盘，求拿到礼物的最大价值
 public class DP_P233_MaxValueOfGifts {
     //1.递归 f(i,j) = max(f(i-1,j) , f(i,j-1)) + value(i,j);
     public static int GetMaxValueOfGifts(int[][] gifts, int row, int col){

@@ -1,5 +1,7 @@
 package Tree;
-
+//请实现两个函数，分别用来序列化和反序列化二叉树
+//  解题思路：
+//  序列化是指将结构化的对象转化为字节流以便在网络上传输或写到磁盘进行永久存储的过程。反序列化是指将字节流转回结构化的对象的过程，是序列化的逆过程。
 public class Tree_P194_SerializeBinaryTrees {
     public static String Serialize(TreeNode root) {
         StringBuilder strPre = new StringBuilder();

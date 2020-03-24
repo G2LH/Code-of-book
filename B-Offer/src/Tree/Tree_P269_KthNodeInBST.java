@@ -1,5 +1,5 @@
 package Tree;
-
+//二叉搜索树的第k大节点
 public class Tree_P269_KthNodeInBST {
     private static int count = 0;
     private static TreeNode node = null;
@@ -8,7 +8,7 @@ public class Tree_P269_KthNodeInBST {
         if(k == 0 || pRoot == null){
             return null;
         }
-        InOrderKthNode(pRoot, k);
+        InOrderKthNode(pRoot,k);
         return node;
     }
     public static void InOrderKthNode(TreeNode pRoot, int k){

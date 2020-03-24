@@ -1,7 +1,7 @@
 package List;
 
 import java.util.Stack;
-
+//打印反转链表
 public class List_P58_PrintListInReversedOrder {
     //递归
     public static void printReversingRecursive(ListNode<Integer> node){

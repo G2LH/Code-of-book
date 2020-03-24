@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Stack;
 
 //反转链表
+//想要链表反转时不断裂，至少需要3个变量记录，pre，cur，post
 public class List_P142_ReverseList {
     public static ListNode<Integer> reverseList(ListNode<Integer> head){
         if(head == null || head.next == null)

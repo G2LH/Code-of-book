@@ -1,6 +1,6 @@
 package Hash;
 
-/**
+/*
  * 一个长度为n的数组，值的范围在0~n-1内，有一个或多个数字重复，求其中任意一个
  */
 public class Hash_P39_DuplicationInArray {

@@ -3,11 +3,11 @@ package Tree;
 import java.util.ArrayList;
 
 /**
- * Created by ryder on 2017/7/18.
  * 二叉搜索树与双向链表
  * 将二叉搜索树转换为双向链表，树的left指向prev节点，树的right指向post节点
  * 左右支转换完之后要与根节点组合，所以左右支要返回自己的最小点与最大点两个节点，返回值使用数组
  */
+//先中序遍历加到list里，再将list里的左右节点进行变换
 public class Tree_P191_ConvertBinarySearchTree {
 //    private static Stack<TreeNode> s = new Stack<TreeNode>();
 //    private static Queue<TreeNode> q = new LinkedList<TreeNode>();

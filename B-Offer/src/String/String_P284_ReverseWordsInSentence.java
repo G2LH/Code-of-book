@@ -1,5 +1,7 @@
 package String;
-
+//翻转单词顺序
+//题目要求：
+//输入一个英文句子，翻转单词顺序，单词内字符不翻转，标点符号和普通字母一样处理。
 import java.util.Stack;
 
 public class String_P284_ReverseWordsInSentence {

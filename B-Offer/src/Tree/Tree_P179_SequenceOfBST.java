@@ -1,5 +1,7 @@
 package Tree;
-
+//.二叉搜索树的后序遍历
+//题目要求：
+//输入一个整数数组，判断该数组是不是某二叉搜索树的后序遍历结果，假设输入数组的任意两个数都互不相同。
 public class Tree_P179_SequenceOfBST {
     public static boolean VerifySquenceOfBST(int [] sequence) {
         if(sequence.length == 0){

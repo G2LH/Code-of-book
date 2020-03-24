@@ -1,3 +1,6 @@
+//数组中数值和下标相等的元素
+//题目要求：
+//假设一个单调递增的数组里的每个元素都是整数且是唯一的。编写一个程序，找出数组中任意一个数值等于其下标的元素
 public class P267_IntegerIdenticalToIndex {
     public static int getNumberSameAsIndex(int[] data){
         if(data==null ||data.length==0) {

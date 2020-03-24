@@ -23,18 +23,18 @@ public class List_P119_DeleteNodeInList {
             return head;
         }
     }
-    public static ListNode<Integer> deleteDuplication(ListNode<Integer> head) {
-        ListNode<Integer> temp = head;
-        while (temp.next != null) {
-            if (temp.val == temp.next.val) {
-                temp.next = temp.next.next;
-            }
-            else {
-                temp = temp.next;
-            }
-        }
-        return head;
-    }
+//    public static ListNode<Integer> deleteDuplication(ListNode<Integer> head) {
+//        ListNode<Integer> temp = head;
+//        while (temp.next != null) {
+//            if (temp.val == temp.next.val) {
+//                temp.next = temp.next.next;
+//            }
+//            else {
+//                temp = temp.next;
+//            }
+//        }
+//        return head;
+//    }
     public static void main(String[] args){
 //        ListNode<Integer> head = new ListNode<>(1);
 //        ListNode<Integer> node2 = new ListNode<>(2);
@@ -52,7 +52,7 @@ public class List_P119_DeleteNodeInList {
         head.next.next.next.next.next = new ListNode<>(3);
         head.next.next.next.next.next.next = new ListNode<>(3);
         System.out.println(head);
-        head = deleteDuplication(head);
-        System.out.println(head);
+//        head = deleteDuplication(head);
+//        System.out.println(head);
     }
 }

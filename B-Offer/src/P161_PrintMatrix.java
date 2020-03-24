@@ -1,6 +1,6 @@
 //顺时针打印矩阵
-//题目要求：
-//输入一个矩阵，按照从外向里以顺时针的顺序一次打印出每一个数字。
+//顺时针打印矩阵
+//题目要求：输入一个矩阵，按照从外向里以顺时针的顺序一次打印出每一个数字
 public class P161_PrintMatrix {
     public static  void printMatrix(int[][] matrix){
         if(matrix == null || matrix.length == 0){

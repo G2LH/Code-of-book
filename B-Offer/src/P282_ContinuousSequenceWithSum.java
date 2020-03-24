@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-
+//和为sum的连续子序列
 public class P282_ContinuousSequenceWithSum {
     public static ArrayList<ArrayList<Integer> > FindContinuousSequence(int sum) {
         if(sum <= 1){

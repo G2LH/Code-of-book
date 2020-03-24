@@ -1,7 +1,7 @@
 package Search0Sort;
 //最小的k个数
 //题目要求：
-//找出n个整数中最小的k个数。
+//找出n个整数中最小的k个数
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -70,10 +70,7 @@ public class Sort_P209_KLeastNumbers {
     public static ArrayList<Integer> GetLeastNumbers_Solution2(int [] array, int k) {
         ArrayList<Integer> list = new ArrayList<>();
         //创建一个降序排列的PriorityQueue，自定义比较器作为参数
-        PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(new Comparator<Integer>(){
-            public int compare(Integer o1, Integer o2) {
-                return o2-o1;
-            }});
+        PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(Comparator.reverseOrder());
 
         for(int i=0;i<array.length;i++){
             if(priorityQueue.size()<k){
