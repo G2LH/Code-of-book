@@ -4,7 +4,7 @@ import java.util.ArrayList;
 //圆圈中最后剩下的数字
 //题目要求：
 //0，1，2...n-1这n个数字拍成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字，求剩下的最后一个数字。
-public class P300_LastNumInCircle {
+public class P300_LastNumInCircle_review {
     //1
     public static int LastRemaining(int n, int m) {
         if(n < 0 || m < 1){

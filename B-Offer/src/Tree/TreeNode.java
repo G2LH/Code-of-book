@@ -5,10 +5,10 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class TreeNode<T> {
-    public T val;
+    public Integer val;//for DP_Rob
     public TreeNode<T> left;
     public TreeNode<T> right;
-    public TreeNode(T val){
+    public TreeNode(Integer val){//for DP_Rob
         this.val = val;
         this.left = null;
         this.right = null;

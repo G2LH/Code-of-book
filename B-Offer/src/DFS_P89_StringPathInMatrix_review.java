@@ -1,7 +1,7 @@
 //回溯:矩阵中的路径DFS
 //题目要求：
 //设计一个函数，用来判断一个矩阵中是否存在一条包含某字符串的路径。
-public class DFS_P89_StringPathInMatrix {
+public class DFS_P89_StringPathInMatrix_review {
     public static boolean hasPath(char[][] board, String word) {
         char[] words = word.toCharArray();
         int rowLen = board.length;

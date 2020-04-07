@@ -17,20 +17,16 @@ public class Sort_P79_Sort {
     }
     public static  int quickSortPartition(int[] data, int start, int end){
         int pivot = data[start];  //枢轴记录
-        int left = start;
-        int right = end;
-        while(left < right){
-            while (left < right && data[right] >= pivot)
-                right--;
-            if(left < right)
-                data[left] = data[right];    //交换比枢轴小的记录到左端
-            while (left < right && data[left] < pivot)
-                left++;
-            if(left < right)
-                data[right] = data[left];   //交换比枢轴小的记录到右端
+        while(start < end){
+            while (start < end && data[end] >= pivot)
+                end--;
+            data[start] = data[end];    //交换比枢轴小的记录到左端
+            while (start < end && data[start] < pivot)
+                start++;
+            data[end] = data[start];   //交换比枢轴小的记录到右端
         }
-        data[left] = pivot;         //扫描完成，枢轴到位
-        return left;                //返回的是枢轴的位置
+        data[start] = pivot;         //扫描完成，枢轴到位
+        return start;                //返回的是枢轴的位置
     }
     public static void testQuickSort(){
         int[] data = {5,4,3,2,1};

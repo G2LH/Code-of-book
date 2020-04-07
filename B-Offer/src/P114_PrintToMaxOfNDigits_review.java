@@ -1,6 +1,6 @@
 //打印从1到最大的n位数
 //大数问题.
-public class P114_PrintToMaxOfNDigits {
+public class P114_PrintToMaxOfNDigits_review {
     public static void printToMaxOfNDigits(int num){
         if(num < 0)
             return;

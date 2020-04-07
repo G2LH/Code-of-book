@@ -1,7 +1,7 @@
 import java.util.HashMap;
 //题目要求：
 //一个整数数组里除了两个数字出现一次，其他数字都出现两次。请找出这两个数字。要求时间复杂度为o(n)，空间复杂度为o(1)。
-public class P275_NumberAppearOnce {
+public class P275_NumberAppearOnce_no {
     private static int num1 = 0,num2=0;
     //1.
     public static void FindNumsAppearOnce(int[] array) {

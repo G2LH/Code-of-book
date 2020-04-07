@@ -1,4 +1,4 @@
-public class P275_FindNumberApperanceOnce {
+public class P275_FindNumberApperanceOnce_no {
     //problem
     public static int FindNumsAppearOnce(int[] array) {
 

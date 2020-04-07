@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 //1.()()  2.(())两种情况
-public class kuohao {
+public class kuohao_review {
     //1.给出 n 代表生成括号的对数，请你写出一个函数，使其能够生成所有可能的并且有效的括号组合
         public List<String> generateParenthesis(int n) {
             List<String> ans = new ArrayList();

@@ -16,6 +16,9 @@ public class Tree_P182_FindPath {
         return result;
     }
     public static void findInOrder(TreeNode<Integer> root, int target){
+        if(root == null){
+            return;
+        }
         target -= root.val;
         path.add(root.val);
         if(root.left == null && root.right == null && target == 0){
@@ -28,7 +31,6 @@ public class Tree_P182_FindPath {
             findInOrder(root.right,target);
         }
         path.remove(path.size() - 1);//将path恢复到之前未进行左子树检查的状态
-        return;
     }
     public static void main(String[] args){
         //            10

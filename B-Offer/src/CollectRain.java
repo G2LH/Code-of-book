@@ -5,12 +5,12 @@ public class CollectRain {
         int[] lmax = new int[height.length];
         int[] rmax = new int[height.length];
         lmax[0] = height[0];
-        rmax[0] = height[height.length-1];
+        rmax[height.length-1] = height[height.length-1];
         for(int i = 1; i < height.length; i++){
             lmax[i] = Math.max(height[i],lmax[i-1]);
         }
         for(int i =height.length-2; i >0; i--){
-            rmax[i] = Math.max(height[i],rmax[i-1]);
+            rmax[i] = Math.max(height[i],rmax[i+1]);
         }
         for(int i = 1; i < height.length-1; i++){
             res+=Math.min(lmax[i],rmax[i]) - height[i];

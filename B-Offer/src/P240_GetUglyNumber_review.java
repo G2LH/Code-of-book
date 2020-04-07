@@ -1,6 +1,6 @@
 //丑数:题目要求：
 //我们把只包含因子2,3,5的数成为丑数。求按照从小到大的顺序第1500个丑数。1作为第一个丑数。
-public class P240_GetUglyNumber {
+public class P240_GetUglyNumber_review {
     //空间换时间
     public static int GetUglyNumber(int n){
         int index = 0;

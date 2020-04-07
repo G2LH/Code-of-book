@@ -92,8 +92,8 @@ public class Sort_P209_KLeastNumbers {
     }
 
     public static void main(String[] args){
-        int[] data1 = {6,1,3,5,4,2};
-        ArrayList<Integer> list = GetLeastNumbers_Solution(data1,3);
+        int[] data1 = {1,3,5,7,2,4,6,8};
+        ArrayList<Integer> list = GetLeastNumbers_Solution(data1,4);
         for(int i = 0; i<list.size();i++){
             System.out.print(list.get(i));
         }
